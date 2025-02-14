@@ -2,7 +2,7 @@ $(document).ready(function() {
     var container = $("#images-container");
     var btn_yes = $("#yes");
 
-    pdfjsLib.getDocument('pdf2').promise.then(function(pdf) {
+    pdfjsLib.getDocument('pdf2.pdf').promise.then(function(pdf) {
         for (var i = 1; i <= pdf.numPages; i++) {
             pdf.getPage(i).then(function(page) {
                 var scale = 1.5;
