@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var container = $("#images-container");
 
-    pdfjsLib.getDocument('pdf1').promise.then(function(pdf) {
+    pdfjsLib.getDocument('pdf1.pdf').promise.then(function(pdf) {
         for (var i = 1; i <= pdf.numPages; i++) {
             pdf.getPage(i).then(function(page) {
                 var scale = 1.5;
