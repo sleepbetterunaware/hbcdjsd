@@ -24,12 +24,9 @@ $(document).ready(function() {
                         top: Math.random() * 100 + '%',
                         left: Math.random() * 100 + '%',
                         width: '100px',
-                        opacity: 0.9
+                        opacity: 0.9,
+                        animation: 'float 10s infinite'
                     }).appendTo(container);
-
-                    img.animate({ opacity: 0 }, 5000, function() {
-                        $(this).remove();
-                    });
                 });
             });
         }
