@@ -24,7 +24,9 @@ $(document).ready(function() {
                         position: 'absolute',
                         top: Math.random() * 100 + '%',
                         left: Math.random() * 100 + '%',
-                        width: '100px'
+                        width: '100px',
+                        opacity: 0.9,
+                        animation: 'float 10s infinite'
                     }).appendTo(container);
                 });
             });
